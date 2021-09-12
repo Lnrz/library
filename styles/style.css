@@ -57,7 +57,6 @@ html, body, #mainBody {
 
 #title, #author, #moreInfo {
     position: absolute;
-    color: white;
     left: 0.8vw;
     margin: 0;
     border: 0;
@@ -72,17 +71,95 @@ html, body, #mainBody {
     height: 22vh;
     top: 1.5vh;
     font-size: 30px;
+    color: white;
 }
 
 #author {
     bottom: 2vh;
     font-size: 20px;
+    color: goldenrod;
 }
 
 #moreInfo {
     font-size: 22px;
     bottom: 1vh;
     left: 10vw;
+    color: gray;
+}
+
+#stats {
+    position: absolute;
+    left: calc(3vw + 5px);
+    height: 6%;
+    width: calc(97vw - 5px);
+    background-color: rgb(35, 70, 80);
+    box-shadow: 0px 3px 8px rgb(35, 70, 80);
+}
+
+#blur {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+#moreInfoWindow {
+    position: relative;
+    left: 30%;
+    top: 20%;
+    height: 50%;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px hsl(254, 30%, 10%);
+    background-color: hsl(254, 30%, 10%);
+}
+
+.infoP {
+    position: relative;
+    font-size: 24px;
+    left: 3%;
+    color:white;
+    margin: 0;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+#titolo {
+    top: 10%;
+    left: 2%;
+    font-size: 35px;
+    width: 95%;
+    height: 20%;
+}
+
+#pagine {
+    top: 14%;
+    width: 30%;
+}
+
+#autore {
+    top: 61%;
+    width: 70%;
+    height: 12%;
+}
+
+#letto {
+    top: 50%;
+    left: 80%;
+    width: 20%;
+}
+
+#cancel {
+    position: absolute;
+    color: red;
+    left: auto;
+    right: 2%;
+    top: 3%;
+    font-weight: bold;
+}
+
+.aqua {
+    color: aqua;
 }
 
 ::-webkit-scrollbar {
