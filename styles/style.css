@@ -16,7 +16,7 @@ html, body, #mainBody {
     border-right-style: inset;
     border-right-color: rgba(90, 100, 110, 0.75);
     transition-property: width;
-    transition-duration: 350ms;
+    transition-duration: 250ms;
     box-shadow: 0px 0px 6px rgba(90, 100, 110);
 }
 
@@ -31,7 +31,7 @@ html, body, #mainBody {
     user-select: none;
     -webkit-user-drag: none;
     transition-property: left;
-    transition-duration: 350ms;
+    transition-duration: 250ms;
 }
 
 #bookContainer {
@@ -176,4 +176,78 @@ html, body, #mainBody {
 
 ::-webkit-scrollbar-thumb:hover {
     background: gray;
+}
+
+#searchBox, #insertForm {
+    position: absolute;
+}
+
+#searchBox {
+    top: 8%;
+    left: 5%;
+    width : 90%;
+    height: 10%;
+    background-color: transparent;
+    border: 1px solid blue;
+}
+
+#insertForm {
+    top: 18%;
+    left: 5%;
+    width: 90%;
+    height: 80%;
+}
+
+#insertPara {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 20%;
+    margin-bottom: 30%;
+}
+
+form * {
+    position: relative;
+    left: 14%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+form input:not(input[type="radio"]) {
+    border-radius: 25%;
+    box-shadow: 0px 0px 8px rgba(0, 0, 255, 0.3);
+}
+
+#titleLabel {
+    left: 36%;
+}
+
+#authorLabel {
+    left: 40%;
+}
+
+#pagesLabel {
+    left: 42%;
+}
+
+#radioPara {
+    left: 28%;
+}
+
+#addBtn {
+    left: 34%;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15%;
+    border: 0;
+    box-shadow: 0px 0px 6px blueviolet;
+}
+
+label[for="true"] {
+    font-weight: bold;
+    color: rgb(10, 70, 10);
+}
+
+label[for="false"] {
+    font-weight: bold;
+    color: rgb(80, 10, 10);
 }
